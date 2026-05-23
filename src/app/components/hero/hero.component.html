@@ -1,0 +1,61 @@
+<section class ="hero">
+     <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>Ghar jaisa khana, roz aapke ghar tak 🍛</h1>
+      <p>Fresh, hygienic & affordable tiffin service at your doorstep</p>
+      
+      <div class="hero-buttons">
+        <button class="btn primary" (click)="openMenu()">View Menu</button>
+        <button class="btn secondary">Subscribe Now</button>
+      </div>
+    </div>
+
+     <div class="hero-image">
+      <img src="assets/food.jpg" alt="Food" />
+    </div>
+    <a routerLink="/admin">
+  Go To Admin
+</a>
+    </div>
+</section>
+
+<section class="menu-section" *ngIf="showMenu">
+
+  <h2>Today's Meals 🍽️</h2>
+
+  <div class="menu-grid">
+
+    <div
+      class="menu-card"
+      *ngFor="let menu of menuService.menus()"
+    >
+
+      <h3>
+        {{ menu.type }}
+      </h3>
+
+      <ul>
+
+        <li *ngFor="let item of menu.items">
+          {{ item }}
+        </li>
+
+      </ul>
+
+      <p class="price">
+        ₹{{ menu.price }}
+      </p>
+
+      <button class="card-btn">
+        Order Now
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<app-location-checker>
+</app-location-checker>

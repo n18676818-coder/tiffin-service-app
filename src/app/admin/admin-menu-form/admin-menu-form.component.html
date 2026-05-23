@@ -1,0 +1,44 @@
+<div class="form-container">
+
+  <h2>Admin Menu Form 🍽️</h2>
+
+  <!-- Meal Type -->
+  <div class="form-group">
+    <label>Meal Type</label>
+
+    <select [(ngModel)]="mealType">
+      <option value="">Select Meal</option>
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+    </select>
+  </div>
+
+  <!-- Items -->
+  <div class="form-group">
+    <label>Items</label>
+
+    <input
+      type="text"
+      [(ngModel)]="items"
+      placeholder="Example: Dal,Rice,Roti"
+    />
+  </div>
+
+  <!-- Price -->
+  <div class="form-group">
+    <label>Price</label>
+
+    <input
+      type="number"
+      [(ngModel)]="price"
+      placeholder="Enter price"
+    />
+  </div>
+
+  <!-- Save Button -->
+  <button class="save-btn" (click)="saveMenu()">
+    Save Menu
+  </button>
+
+</div>

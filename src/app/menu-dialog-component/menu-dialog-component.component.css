@@ -1,0 +1,8 @@
+.menu-grid {
+  display: flex;
+  gap: 20px;
+}
+
+mat-card {
+  width: 250px;
+}
