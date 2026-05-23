@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+}
+
+/* Layout */
+.app {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form-box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Cards */
+.cards {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+/* Meal */
+.item {
+  margin: 10px 0;
+}
+
+.item span {
+  font-weight: bold;
+}
+
+/* Grocery */
+.grocery {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.grocery input {
+  margin-right: 10px;
+}
+
+/* Loader */
+.loader {
+  margin: 20px auto;
+  border: 4px solid #eee;
+  border-top: 4px solid #ff6b6b;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Reset */
+.reset-btn {
+  background: #333;
+  margin-top: 10px;
+}

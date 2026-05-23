@@ -1,0 +1,30 @@
+<div class="app">
+
+  <h1>🍽️ Daily Meal Planner</h1>
+
+  <!-- ✅ FORM START -->
+  <form [formGroup]="form" class="form-box">
+
+    <input type="number"
+           placeholder="Enter Budget ₹"
+           formControlName="budget" />
+
+    <select formControlName="preference">
+      <option value="">Select Preference</option>
+      <option value="spicy">Spicy</option>
+      <option value="healthy">Healthy</option>
+    </select>
+
+    <button type="button" (click)="generatePlan()">
+      Generate Plan
+    </button>
+
+  </form>
+  <!-- ✅ FORM END -->
+
+  <!-- RESULT -->
+  <div *ngIf="mealPlan">
+    <p>{{ mealPlan.breakfast }}</p>
+  </div>
+
+</div>
